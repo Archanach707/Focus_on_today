@@ -50,7 +50,11 @@ body {
   font-family: "Poppins", sans-serif; 
 }
 
-.heading {
+main {
+  padding: 0px 16px;
+}
+
+.title {
   color: var(--primary-text-color);
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -58,6 +62,104 @@ body {
   font-size: 64px;
 }
 
-.heading span {
+.title span {
   color: var(--secondary-text-color);
+}
+
+.container {
+  background-color: #FBFBFB;
+  max-width: 660px;
+  margin: auto;
+  border-radius: 15px;
+  padding: 32px 48px;
+  box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+.sub-title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.sub-title .sun-icon {
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.progress-lable {
+  color: #858585;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  background-color: var(--main-background-color);
+  height: 30px;
+  border-radius: 15px;
+}
+
+.progress-value {
+  height: 100%;
+  width: 66%;
+  background-color: var(--primary-text-color);
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.error-lable {
+  color: #FF5151;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 17px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  padding: 0px 22px;
+  background-color: #FFFFFF;
+  margin-bottom: 46px;
+}
+
+.custom-checkbox {
+  height: 24px;
+  width: 24px;
+  border: 2px solid rgba(97, 72, 28, 0.3);
+  border-radius: 100%;
+  display: inline-block;
+}
+
+.goal-input {
+  border: none;
+  outline: none;
+  margin-left: 22px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.goal-input::placeholder {
+  color: #D9D9D9;
+}
+
+.quote {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+  .container {
+    padding: 16px 34px;
+  }
 }
