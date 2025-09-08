@@ -45,6 +45,10 @@
   color: var();
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--main-background-color);
   font-family: "Poppins", sans-serif; 
@@ -126,7 +130,7 @@ main {
   align-items: center;
   padding: 0px 22px;
   background-color: #FFFFFF;
-  margin-bottom: 46px;
+  margin-bottom: 42px;
 }
 
 .custom-checkbox {
@@ -134,8 +138,16 @@ main {
   width: 24px;
   border: 2px solid rgba(97, 72, 28, 0.3);
   border-radius: 100%;
-  display: inline-block;
+  display: flex;
   flex-shrink: 0;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #F6F6F6; */
+}
+
+.check-icon {
+  display: none;
 }
 
 .goal-input {
@@ -144,6 +156,10 @@ main {
   margin-left: 22px;
   font-family: inherit;
   font-size: 16px;
+  /* flex-grow: 1; */
+  width: 100%;
+  align-self: stretch;
+  padding-left: 15px;
 }
 
 .goal-input::placeholder {
@@ -160,7 +176,16 @@ main {
   color: #858585;
   text-align: center; 
   font-weight: 500;
-  margin-top: 64px;
+  margin-top: 34px;
+}
+
+.completed .custom-checkbox {
+  background-color: #48A300;
+  border-color: #48A300;
+}
+
+.completed .check-icon {
+  display: block;
 }
 
 @media (max-width: 768px) {
@@ -169,5 +194,15 @@ main {
   }
   .container {
     padding: 16px 34px;
+  }
+
+  .form-container {
+    height: 64px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+  }
+
+  .custom-checkbox {
+    height: 20px;
   }
 }
