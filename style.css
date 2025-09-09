@@ -101,6 +101,7 @@ main {
   background-color: var(--main-background-color);
   height: 30px;
   border-radius: 15px;
+  margin-bottom: 20px;
 }
 
 .progress-value {
@@ -118,8 +119,11 @@ main {
 
 .error-lable {
   color: #FF5151;
-  font-size: 14px;
-  margin-bottom: 20px;
+  font-size: 12px;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: -70px;
+  display: none;
 }
 
 .form-container {
@@ -131,6 +135,7 @@ main {
   padding: 0px 22px;
   background-color: #FFFFFF;
   margin-bottom: 42px;
+  margin-top: 40px;
 }
 
 .custom-checkbox {
@@ -159,7 +164,7 @@ main {
   /* flex-grow: 1; */
   width: 100%;
   align-self: stretch;
-  padding-left: 15px;
+  font-weight: 500;
 }
 
 .goal-input::placeholder {
@@ -187,6 +192,15 @@ main {
 .completed .check-icon {
   display: block;
 }
+
+.completed .goal-input {
+  color: #48A300;
+  text-decoration-line: line-through;
+}
+/* 
+.error-lable {
+  display: none;
+} */
 
 @media (max-width: 768px) {
   .title {
