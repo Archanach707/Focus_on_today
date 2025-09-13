@@ -106,7 +106,7 @@ main {
 
 .progress-value {
   height: 100%;
-  width: 66%;
+  width: 0;
   background-color: var(--primary-text-color);
   border-radius: 15px;
   font-weight: 500;
@@ -114,10 +114,14 @@ main {
   color: #fff;
   display: flex;
   align-items: center;
-  padding-left: 20px;
+  overflow: hidden;
+  transition: width 0.2s ease-in-out;
 }
 
-.error-lable {
+.progress-value span {
+  padding-left: 20px;
+}
+.error-label {
   color: #FF5151;
   font-size: 12px;
   margin-bottom: 0;
@@ -197,10 +201,10 @@ main {
   color: #48A300;
   text-decoration-line: line-through;
 }
-/* 
-.error-lable {
-  display: none;
-} */
+
+.show-error .error-label {
+  display: block  ;
+}
 
 @media (max-width: 768px) {
   .title {
