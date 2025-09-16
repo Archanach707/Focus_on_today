@@ -1,3 +1,4 @@
+
 const checkBoxList = document.querySelectorAll('.custom-checkbox');
 const inputFields = document.querySelectorAll('.goal-input');
 const errorLabel = document.querySelector('.error-label');
@@ -29,10 +30,9 @@ const allGoals = JSON.parse(localStorage.getItem('allGoals')) || {
 
 let completedGoalsCount = Object.values(allGoals).filter(goal => goal.completed).length;
 
-progressValue.style.width = `${(completedGoalsCount / inputFields.length) * 100}%`;
-progressValue.firstElementChild.innerText = `${completedGoalsCount}/${inputFields.length} completed`;
-progressLabel.innerText = allQuotes[completedGoalsCount];
-
+progressValue.style.width = `${(completedGoalsCount / inputFields.length) * 100}%`
+progressValue.firstElementChild.innerText = `${completedGoalsCount}/${inputFields.length} completed`
+progressLabel.innerText = allQuotes[completedGoalsCount]
 
 checkBoxList.forEach((checkbox) => {
   checkbox.addEventListener('click', (e) => {
