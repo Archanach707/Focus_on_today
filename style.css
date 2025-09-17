@@ -36,10 +36,8 @@
 
 :root {
   --main-background-color: #48A30012;
-  ;
   --primary-text-color: #48A300;
   --secondary-text-color: #61481C;
-  ;
   --main-text: #333;
 }
 
@@ -173,7 +171,6 @@ main {
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  /* background-color: #F6F6F6; */
   outline: none;
   -webkit-tap-highlight-color: transparent;
   /* Mobile highlight hatane ke liye */
